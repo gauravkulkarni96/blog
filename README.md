@@ -1,0 +1,2 @@
+# blog
+Django powered blog
