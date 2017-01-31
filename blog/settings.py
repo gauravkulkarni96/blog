@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from blog.cred import database, user, password, host, port
+from cred import database, user, password, host, port
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'wex=gag+-iqc$1py_avko)3l*sgfp^362pei!wc0nu5_d9@)88'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [u'gauravkulkarni.herokuapp.com']
+ALLOWED_HOSTS = [u'gauravkulkarni.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static_root")
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_root")
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static", "our_static"),
 )

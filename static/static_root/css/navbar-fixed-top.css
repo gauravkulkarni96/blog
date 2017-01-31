@@ -1,0 +1,50 @@
+body {
+  min-height: 2000px;
+  padding-top: 60px;
+}
+
+.navbar-fixed-top {
+	height: 60px;
+	font-size: 1.6em;
+	background-color: white;
+
+.nav.navbar-nav.navbar-right a {
+    color: black;
+}
+.nav.navbar-nav.navbar-right a:hover {
+    color: blue;
+}
+.jumbotron {
+	background-color: black;
+	color: white;
+	height: 500px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.jumbotron h1 {
+	font-weight: bold;
+	font-size: 6em;
+}
+
+body > .container-fluid {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container-fluid .jumbotron {
+	border-radius: 0px;
+}
+.nameinjumbo {
+	background-color: white;
+	height: 40px;
+	width: 200px;
+	margin:auto;
+	color: black;
+	padding-top: 5px;
+	border-radius: 10px;
+}
+
+.navbar-brand {
+	background-color: black;
+}
