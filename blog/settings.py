@@ -25,7 +25,7 @@ SECRET_KEY = 'wex=gag+-iqc$1py_avko)3l*sgfp^362pei!wc0nu5_d9@)88'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gauravkulkarni.herokuapp.com']
 
 
 # Application definition
