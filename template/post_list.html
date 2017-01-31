@@ -1,0 +1,44 @@
+ {% extends 'temp.html' %}
+ {% block 'content' %}
+
+<html>
+<head><title>My Public Diary | Gaurav Kulkarni</title></head>
+<body>
+<br>
+<br>
+<br>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% for obj in objects %}
+	<p>
+
+	<div class="blog-post container-lef">
+	<div style="float:left; margin-right:20px;">
+                    <span class="day">
+                        {{ obj.dateshow.day }}
+                    </span>
+                    <span class="month-year">
+                        {{ obj.dateshow|date:"F" }} {{ obj.dateshow.year }}
+                    </span>
+                </time>
+            </span>
+            </div>
+		<h2 class="blog-post-title"><a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></h2>
+		<p style="margin-left:10px; font-size:20px;margin-top: 15px; margin-left: 180px; width:900px;color: #505050;"> {{ obj.content }}</p>
+		</div>
+	</p>
+{% endfor %}
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
