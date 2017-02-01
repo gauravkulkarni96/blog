@@ -17,7 +17,7 @@
 
 {% for obj in objects %}
 	<p>
-
+<br>
 	<div class="blog-post container-lef">
 	<div style="float:left; margin-right:20px;">
                     <span class="day">
@@ -30,9 +30,10 @@
             </span>
             </div>
 		<h2 class="blog-post-title"><a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></h2>
-		<p style="margin-left:10px; font-size:20px;margin-top: 15px; margin-left: 180px; width:900px;color: #505050;"> {{ obj.content }}</p>
+		<p style="margin-left:10px; font-size:20px;margin-top: 15px; margin-left: 180px; width:900px;color: #505050;"> {{ obj.content }}<br><br></p>
 		</div>
 	</p>
+
 {% endfor %}
 
 </body>
