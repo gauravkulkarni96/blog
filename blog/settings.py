@@ -14,7 +14,7 @@ import os
 #from cred import database, user, password, host, port
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+from boto.s3.connection import S3Connection
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': ENV['database'],
-        'USER' : ENV['user'],
-        'PASSWORD': ENV['password'],
-        'HOST': ENV['host'],
-        'PORT': ENV['port'],
+        'NAME': S3Connection(os.environ['database']),
+        'USER' : S3Connection(os.environ['user']),
+        'PASSWORD': S3Connection(os.environ['password']),
+        'HOST': S3Connection(os.environ['host']),
+        'PORT': S3Connection(os.environ['port']),
     }
 }
 # Password validation
