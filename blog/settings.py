@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from cred import database, user, password, host, port
+#from cred import database, user, password, host, port
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -75,18 +75,27 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': database,
+#         'USER' : user,
+#         'PASSWORD': password,
+#         'HOST': host,
+#         'PORT': port,
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': database,
-        'USER' : user,
-        'PASSWORD': password,
-        'HOST': host,
-        'PORT': port,
+        'NAME': ENV['database'],
+        'USER' : ENV['user'],
+        'PASSWORD': ENV['password'],
+        'HOST': ENV['host'],
+        'PORT': ENV['port'],
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
