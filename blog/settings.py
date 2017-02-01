@@ -85,15 +85,15 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 #         'PORT': port,
 #     }
 # }
-
+# s3 = S3Connection(os.environ['database'],os.environ['user'],os.environ['password'],os.environ['host'],os.environ['port'])
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': S3Connection(os.environ['database']),
-        'USER' : S3Connection(os.environ['user']),
-        'PASSWORD': S3Connection(os.environ['password']),
-        'HOST': S3Connection(os.environ['host']),
-        'PORT': S3Connection(os.environ['port']),
+        'NAME': os.environ.get('database'),
+        'USER' : os.environ.get('user'),
+        'PASSWORD': os.environ.get('password'),
+        'HOST': os.environ.get('host'),
+        'PORT': os.environ.get('port'),
     }
 }
 # Password validation
