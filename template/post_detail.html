@@ -11,10 +11,13 @@
     {% endfor %}
 </ul>
 {% endif %}
-{{ objects.id }}<br>
-{{ objects.title }}<br>
-{{ objects.content }}<br>
-{{ objects.timeshow }}<br><br>
+<div style="margin-top:100px;" align="center">
+<h2 class="blog-post-title" style="text-align: center; font-size: 90px; text-transform: uppercase; margin-bottom:0px;"><b>{{ objects.title }}</b></h2>
+<h3 style="margin-top:0px;">-by Gaurav Kulkarni on {{ objects.dateshow.day }}, {{ objects.dateshow|date:"F" }} {{ objects.dateshow.year }}</h3>
+<div align="left" style="margin-top:100px; width:900px;">
+<p><h3>{{ objects.content }}</h3><p></p><br>
+</p>
+</div>
 </body>
 </html>
 {% endblock %}
