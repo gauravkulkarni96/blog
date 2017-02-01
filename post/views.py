@@ -3,6 +3,8 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .models import Post
 from .forms import PostForm
+from django.utils import timezone
+
 # Create your views here.
 
 
@@ -18,7 +20,7 @@ def post_list(request):
 
 def post_create(request):
 	if request.user.is_staff:
-		form = PostForm(request.POST or None)
+		form = PostForm(request.POST or None, initial={'dateshow':timezone.now().date() ,'timeshow':timezone.now().time()})
 		if form.is_valid():
 			instance = form.save(commit=False)
 			instance.save()
