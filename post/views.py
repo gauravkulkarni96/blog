@@ -8,8 +8,8 @@ from django.utils import timezone
 # Create your views here.
 
 
-def post_list1(request):
-	return HttpResponseRedirect("/")
+def home(request):
+	return render(request,'index.html')
 
 def post_list(request):
 	queryset = Post.objects.all().order_by("-dateshow")

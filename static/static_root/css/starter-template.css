@@ -53,13 +53,14 @@
 .container-lef{
 padding-right:15px;
 padding-left:15px;
-margin:auto;
+margin :auto;
+border-top:20px;
 }
 
 .day {
   width: 150px;
   align:center;
-  text-align:center; ;
+  text-align:center;
     display: block;
     font-size: 40px;
     font-weight: 800;

@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from post.views import post_list
+from post.views import home
 from django.conf.urls.static import static
 from django.conf import settings
 
 
 urlpatterns = [
-    url(r'^$', post_list, name='list'),
+    url(r'^$', home, name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^post/', include('post.urls', namespace='post')),
+    url(r'^blog/', include('post.urls', namespace='post')),
 ]
 
 if settings.DEBUG:
