@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('post.urls', namespace='post')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^postapi/', include('rest_api.urls')),
 ]
 
 if settings.DEBUG:
