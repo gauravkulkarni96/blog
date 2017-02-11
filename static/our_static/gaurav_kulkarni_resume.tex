@@ -1,0 +1,119 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\setlength{\textwidth}{5in} % set width of text portion
+% \vspace*{-6mm}
+
+\begin{document}
+\vspace*{-2.0cm}
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\Large\bf Gaurav Kulkarni}
+ \moveleft.5\hoffset\centerline{\url{http://gauravkulkarni.herokuapp.com}}
+ %\moveleft.5\hoffset\centerline{Github : \url{https://github.com/gauravkulkarni96}}
+% \moveleft.5\hoffset\centerline{LinkedIn : \url{https://in.linkedin.com/in/gauravkulkarni96}}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% \moveleft.5\hoffset\centerline{The LNM Institute of Information Technology}
+% \moveleft.5\hoffset\centerline{Sumel, Via-Jamdoli, Jaipur 302031. India}
+ \moveleft.5\hoffset\centerline{E-mail : gauravkulkarni96@gmail.com}
+ \moveleft.5\hoffset\centerline{Phone : +91-774-266-9667}
+ \moveleft.5\hoffset\centerline{Github : \url{https://github.com/gauravkulkarni96}}
+ \moveleft.5\hoffset\centerline{LinkedIn : \url{https://in.linkedin.com/in/gauravkulkarni96}}
+
+
+
+\begin{resume}
+
+\section{EDUCATION}
+
+\begin{tabular}{|c|c|c|c|}
+
+\hline
+\textbf{Degree} & \textbf{Year} & {Institution/Board} & {CPI/\%} \\
+\hline
+B.Tech (CSE) & 2015-2019* & The LNM Institute of Information Technology, Jaipur & 7.18/10 \\
+\hline
+XII & 2015 & Delhi Public School, Bhilai (CBSE) & 92\% \\
+\hline
+X & 2013 & Delhi Public School, Bhilai (CBSE) & 10/10 \\
+\hline
+\end{tabular}
+*expected
+
+\section{PROJECTS\\(WEB DEVELOPMENT)}
+  {\textbf{Public Blog (RESTful)}} (\href{https://github.com/gauravkulkarni96/blog}{Github}) (\href{https://gauravkulkarni.herokuapp.com/blog}{Live Project})\\
+  Public blogging website for personal use. Provides all the functionality of a blog for both, the blogger as well as the reader including creation, deletion and updation of posts, searching by keyword and also its use as an API (RESTful)\\
+Technologies used :
+   \begin{itemize}  \itemsep -2pt %reduce space between items
+   \item Backend : Python, Django, Django REST Framework
+   \item Database : PostgreSQL
+   \item Frontend : HTML, CSS, Bootstrap
+   \end{itemize}
+
+   {\textbf{MicroBlog - Private diary}} (\href{https://github.com/gauravkulkarni96/MicroBlog}{Github}) (\href{https://microblog96.herokuapp.com}{Live Project})\\
+    MicroBlog provides a platform for maintaining a private diary/journal. The user can register/login to create entries in the diary and the entries of that specific user are the only ones he has access to.\\
+Technologies used :
+    \begin{itemize} \itemsep -2pt
+     \item Backend : Python, Flask
+     \item Database : MySQL
+     \item Frontend : HTML, CSS, Bootstrap
+     \end{itemize}
+
+   {\textbf{MVP Landing}} (\href{https://github.com/gauravkulkarni96/sample-django-project}{Github})\\
+    Basic design for the landing page of a Minimum Viable Product (MVP) including features Login, Signup, Subscriptions, Email verifications etc.\\
+Technologies used :
+    \begin{itemize} \itemsep -2pt
+     \item Backend : Python, Django, Django Registration Redux
+     \item Database : SQLite3
+     \item Frontend : HTML, CSS, Bootstrap
+     \end{itemize}
+
+\section{PROJECTS\\(ACADEMIC)}
+   {\textbf{Input data validation}} (\href{https://github.com/gauravkulkarni96/data-validation}{Github})\\
+    Created a library of functions for input data validation. It includes validation of name, phone number, institute roll number, etc.\\
+Technologies used :
+    \begin{itemize} \itemsep -2pt
+     \item C
+     \end{itemize}
+ \textbf{More projects on \href{https://github.com/gauravkulkarni96}{Github} account.}
+
+
+\section{TECHNICAL \\ SKILLS} {\textbf{Languages}:} Python, C, C++, Java\\
+	{\textbf{Web Development(Backend)}:} Django, Flask, Django REST Framework\\
+    {\textbf{Web Development(Frontend)}:} HTML, CSS, Bootstrap\\
+    {\textbf{Databases}:} MySQL, PostgreSQL, SQLite\\
+    {\textbf{Scripting}:} Shell\\
+    {\textbf{Others}:} Command Line\\
+    {\textbf{Platforms}:} Linux
+
+\newpage
+
+\section{COURSES \\ COMPLETED} {\textbf{Computer Science and Engineering}}\\
+Computer Programming, Discrete Mathematical Structures, IT Workshop, Data Structures and Algorithms, Digital Circuits and Systems\\
+
+\section{ACHIEVEME-\\NTS}
+    Secured $1^{st}$ position in District Level Programming Contest.\\
+    Secured $1^{st}$ position in School Level Programming Contest.\\
+
+\section{POSITIONS OF\\ RESPONSIBIL-\\ITY}
+    Teaching Assistant (TA) for Computer Programming course. \hfill June `16 - Dec `16\\
+    Active core-member(Web development div.) of Computer club. \hfill July `16 - Present\\
+    Organizing team member of LNMHacks (Hackathon). \hfill July `16 - Present\\
+
+
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+  \end{footnotesize}
+\end{center}
+
+\end{resume}
+\end{document}
