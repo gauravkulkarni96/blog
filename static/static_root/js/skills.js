@@ -4,7 +4,7 @@ $(window).scroll(function() {
        wH = $(window).height(),
        wS = $(this).scrollTop();
 
-   if (wS > (hT+hH-wH-450)){
+   if (wS > (hT+hH-wH-500)){
       jQuery(document).ready(function(){
       	jQuery('.skillbar').each(function(){
       		jQuery(this).find('.skillbar-bar').animate({
