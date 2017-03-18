@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.10)  18 MAR 2017 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.10)  18 MAR 2017 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -245,16 +245,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 119--123
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 131.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
  4896 strings out of 493029
@@ -272,7 +272,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb>
-Output written on gaurav_kulkarni_resume.pdf (2 pages, 102704 bytes).
+Output written on gaurav_kulkarni_resume.pdf (2 pages, 102732 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
